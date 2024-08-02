@@ -16,16 +16,18 @@ const Hero = () => {
             Let’s get to your next home.
           </p>
 
-          <form className="bg-black-50 p-3 rounded-2xl space-y-2">
-            <div className="relative block bg-transparent w-full border-zinc-600 rounded-xl border p-2">
-              <span className="text-purple-100 text-xs md:text-sm ">From</span>
+          <form className="bg-black-50 p-3 rounded-3xl space-y-2 hero-bg">
+            <div className="relative block bg-transparent w-full border-purple-300 rounded-xl border p-2">
+              <span className="text-purple-100 text-xs md:text-sm  font-medium">
+                From
+              </span>
               <div className="flex items-center space-x-2">
                 <span className="text-white font-medium">
                   <Flight />
                 </span>
                 <input
                   type="text"
-                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base"
+                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base font-semibold"
                   placeholder="Los Angeles, Califoria"
                 />
               </div>
@@ -34,33 +36,37 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className="relative block bg-transparent w-full border-zinc-600 rounded-xl border p-2">
-              <span className="text-purple-100 text-xs md:text-sm ">To</span>
+            <div className="relative block bg-transparent w-full border-purple-300 rounded-xl border p-2">
+              <span className="text-purple-100 text-xs md:text-sm  font-medium">
+                To
+              </span>
               <div className="flex items-center space-x-2">
                 <span className="text-white font-medium">
                   <FlightLand />
                 </span>
                 <input
                   type="text"
-                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base"
+                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base font-semibold"
                   placeholder="Tokyo , Japan"
                 />
               </div>
             </div>
-            <div className="relative block bg-transparent w-full border-zinc-600 rounded-xl border p-2">
-              <span className="text-purple-100 text-xs md:text-sm ">Date</span>
+            <div className="relative block bg-transparent w-full border-purple-300 rounded-xl border p-2">
+              <span className="text-purple-100 text-xs md:text-sm  font-medium">
+                Date
+              </span>
               <div className="flex items-center space-x-2">
                 <span className="text-white font-medium">
                   <Calander />
                 </span>
                 <input
                   type="text"
-                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base"
+                  className=" w-full bg-black-50 placeholder:text-white outline-0 ring-0 text-sm md:text-base font-semibold"
                   placeholder="February 22 2024"
                 />
               </div>
             </div>
-            <button className="block shadow-lg shadow-blue-300/25 w-full font-medium transition-colors hover:transition-colors hover:bg-transparent rounded-full border-blue-500 py-2 px-11 bg-gradient-to-br from-blues-100 to-blues-200">
+            <button className="block shadow-lg shadow-blue-300/25 w-full font-bold transition-colors hover:transition-colors hover:bg-transparent rounded-full border-blue-500 py-2 px-11 gradient-button ">
               Lets' Go
             </button>
           </form>

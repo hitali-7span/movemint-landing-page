@@ -8,10 +8,10 @@ import Star from "@assets/icons/star";
 import SendPlain from "@assets/icons/send-plain";
 const TravelMoverCard = () => {
   return (
-    <div className="grid gap-5 md:grid-cols-3 xl:gap-14 relative movers w-11/12 mx-auto md:ml-0 md:mr-auto">
+    <div className="grid gap-5 md:grid-cols-3 xl:gap-12 relative movers lg:w-11/12 mx-auto md:ml-0 md:mr-auto">
       <div className="rounded-2xl">
         <div className="relative z-20">
-          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-3 left-3">
+          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-6 left-6 z-10 text-sm lg:text-xl">
             <Star />
             <span>4.5</span>
           </div>
@@ -37,7 +37,7 @@ const TravelMoverCard = () => {
       </div>
       <div className="rounded-2xl">
         <div className="relative z-20">
-          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-3 left-3">
+          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-6 left-6 z-10 text-sm lg:text-xl">
             <Star />
             <span>4.5</span>
           </div>
@@ -64,7 +64,7 @@ const TravelMoverCard = () => {
       </div>
       <div className="rounded-2xl">
         <div className="relative z-20">
-          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-3 left-3">
+          <div className="bg-white/40 inline-flex items-center px-1 rounded-md absolute top-6 left-6 z-10 text-sm lg:text-xl">
             <Star />
             <span>4.5</span>
           </div>

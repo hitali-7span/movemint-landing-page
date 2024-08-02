@@ -1,22 +1,8 @@
 import React from "react";
 
-const Facebook = ({ className }) => {
+const Facebook = (props) => {
   return (
-    <svg
-      width="9"
-      height="18"
-      viewBox="0 0 9 9"
-      fill="none"
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8.08292 3.33843C7.6572 3.20375 7.16761 3.11396 6.72061 3.11396C6.16717 3.11396 4.97515 3.49556 4.97515 4.2363V6.00958H7.8062V8.99499H4.97515V17.2329H2.12281V8.99499H0.717926V6.00958H2.12281V4.50566C2.12281 2.23855 3.10197 0.353027 5.46473 0.353027C6.2736 0.353027 7.72105 0.397921 8.50864 0.689727L8.08292 3.33843Z"
-        fill="#080809"
-      />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73"></path></svg>
   );
 };
 

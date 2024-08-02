@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Booking = () => {
   return (
-    <section className="bg-gradient-to-t from-blues-600 form-30% via-blues-500/20 to-blues-600 relative">
+    <section className="bg-gradient-to-t from-black-100 via-blues-100/10 to-black-100 relative section-booking">
       <div className="container py-12 lg:py-28 xl:py-40">
         <div className="space-y-4 lg:w-1/2">
           <h4 className="hidden lg:block poppins-semibold text-base lg:text-2xl uppercase">

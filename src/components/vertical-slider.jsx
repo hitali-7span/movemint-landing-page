@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation"; // Import navigation CSS
 import { Pagination, Navigation } from "swiper/modules";
 
-const review = () => {
+const VerticalSlider = () => {
   const slider = [
     {
       id: 1,
@@ -59,22 +59,22 @@ const review = () => {
         >
           {slider.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="relative slider-card h-auto border border-gray-400 px-7 pt-8 pb-4 mt-12 rounded-xl md:p-8 2xl:px-11 2xl:pt-9 2xl:pb-4 2xl:mt-4">
+              <div className="relative slider-card h-auto border border-gray-400 px-7 pt-8 pb-4 rounded-xl md:p-8 2xl:px-11 2xl:pt-9 2xl:pb-4">
                 <Image
                   src={item.img}
                   alt={item.name}
                   width={50}
                   height={50}
-                  className="absolute  h-16 w-16 2xl:h-20 2xl:w-20 -left-5 -top-8 2xl:-left-7 2xl:-top-9 z-50"
+                  className="absolute h-16 w-16 2xl:h-20 2xl:w-20 -left-5 -top-8 2xl:-left-7 2xl:-top-9 z-50"
                 />
                 <div className="flex flex-col h-full">
                   <h6 className="text-lg 2xl:text-xl font-medium 2xl:max-w-lg text-black-50 poppins-medium">
                     {item.title}
                   </h6>
-                  <span className="text-xl 2xl:text-2xl font-medium pt-3 md:pt-4 2xl:pt-11 text-gray-600 poppins-medium">
+                  <span className="text-base 2xl:text-2xl font-medium pt-3 md:pt-4 2xl:pt-11 text-gray-600 poppins-medium">
                     {item.name}
                   </span>
-                  <span className="text-xl 2xl:text-lg font-medium pt-1 md:pt-2 2xl:pt-2 text-gray-600 poppins-medium">
+                  <span className="text-base 2xl:text-lg font-medium pt-1 md:pt-2 2xl:pt-2 text-gray-600 poppins-medium">
                     {item.location}
                   </span>
                 </div>
@@ -87,4 +87,4 @@ const review = () => {
   );
 };
 
-export default review;
+export default VerticalSlider;

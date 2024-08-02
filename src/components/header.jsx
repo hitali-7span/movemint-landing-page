@@ -85,11 +85,11 @@ const Header = () => {
               </Link>
             </nav>
             <div className="space-y-4  md:space-y-0 md:space-x-3 lg:space-x-9 2xl:space-x-12 md:flex md:items-center">
-              <button className="block border bg-transparent rounded-lg border-white py-2 px-5 md:px-4 text-sm lg:text-base xl:px-9 xl:text-xl">
+              <button className="block border bg-transparent rounded-md border-white py-2.5 px-5 md:px-4 text-sm lg:text-base xl:px-8 xl:text-xl">
                 Sign Up
               </button>
 
-              <button className="block border transition-colors hover:transition-colors hover:bg-transparent text-sm lg:text-base xl:text-xl rounded-lg border-blue-500  py-2 px-7 xl:px-11 bg-gradient-to-br from-blues-100 to-blues-200">
+              <button className="block border transition-colors hover:transition-colors hover:bg-transparent text-sm lg:text-base xl:text-xl rounded-md border-blues-100 gradient-button  py-2.5 px-7 xl:px-9 ">
                 Login
               </button>
             </div>

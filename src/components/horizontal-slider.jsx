@@ -5,8 +5,8 @@ import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 
-import Review from "./virtualSlider";
-const Testimonials = () => {
+import Review from "./vertical-slider";
+const HorizontalSlider = () => {
   return (
     <section className="py-12 md:py-20 bg-gradient-to-t from-black-100 form-30% via-black to-black-100">
       <div className="container">
@@ -50,4 +50,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default HorizontalSlider;

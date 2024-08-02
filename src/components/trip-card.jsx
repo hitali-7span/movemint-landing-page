@@ -61,7 +61,7 @@ const TripCard = () => {
             In Transit
           </h5>
           <div>
-            <span className="text-blues-500 poppins-medium text-sm lg:text-lg mr-1">
+            <span className="text-blues-100 poppins-medium text-sm lg:text-lg mr-1">
               40%
             </span>
             <span className="mb-3 inline-block">completed</span>
