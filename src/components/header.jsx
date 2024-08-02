@@ -2,11 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@assets/images/logo.png";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  window.addEventListener("scroll", function () {
+
+  const scrollHeader = () => {
     var header = document.getElementById("header");
     if (window.scrollY > 50) {
       // Adjust this value as needed
@@ -14,10 +15,19 @@ const Header = () => {
     } else {
       header.classList.remove("scrolled");
     }
-  });
+  }
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+    return () => {
+      window.removeEventListener("scroll", scrollHeader);
+    }
+  }, [])
+
   return (
     <header
       id="header"
@@ -63,16 +73,14 @@ const Header = () => {
           </div>
 
           <div
-            className={`${
-              menuOpen
-                ? "block h-screen bg-gradient-to-b from-black-50 to-black-100 mt-0 top-16 w-full absolute p-4 inset-0 bg-black"
-                : "hidden mt-4"
-            } md:flex md:items-center space-y-5 md:space-y-0 md:justify-between md:space-x-6 xl:space-x-28  md:mt-0 w-full`}
+            className={`${menuOpen
+              ? "block h-screen bg-gradient-to-b from-black-50 to-black-100 mt-0 top-16 w-full absolute p-4 inset-0 bg-black"
+              : "hidden mt-4"
+              } md:flex md:items-center space-y-5 md:space-y-0 md:justify-between md:space-x-6 xl:space-x-28  md:mt-0 w-full`}
           >
             <nav
-              className={`capitalize tetx-sm lg:text-base space-y-4 font-medium md:flex md:items-center md:space-y-0 xl:text-xl xl:space-x-20${
-                menuOpen ? "space-x-0" : " space-x-10"
-              } `}
+              className={`capitalize tetx-sm lg:text-base space-y-4 font-medium md:flex md:items-center md:space-y-0 xl:text-xl xl:space-x-20${menuOpen ? "space-x-0" : " space-x-10"
+                } `}
             >
               <Link href="#" className="block">
                 Home
